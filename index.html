@@ -65,17 +65,17 @@
     }
 
     .link-btn {
+      position: relative;            /* Allows locking the icon to the left */
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 12px;
+      justify-content: center;       /* Keeps text perfectly centered */
       background-color: var(--card-bg);
       color: var(--text-main);
       text-decoration: none;
-      padding: 16px;
+      padding: 16px 24px;
       border-radius: 12px;
       font-weight: 500;
-      font-size: 1rem;
+      font-size: 1.05rem;
       transition: all 0.2s ease;
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     }
@@ -87,22 +87,25 @@
 
     .link-btn.secondary {
       background-color: transparent;
-      border: 1.5px solid var(--card-bg); /* subtle red outline */
+      border: 1.5px solid var(--card-bg);
       color: var(--text-main);
       box-shadow: none;
       margin-top: 8px;
     }
 
     .link-btn.secondary:hover {
-      background-color: var(--card-bg);   /* fills with red on hover */
+      background-color: var(--card-bg);
       transform: translateY(-2px);
     }
 
     .icon {
-      width: 20px;
-      height: 20px;
+      position: absolute;
+      left: 20px;
+      width: 26px;
+      height: 26px;
       object-fit: contain;
     }
+
   </style>
 </head>
 <body>
