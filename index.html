@@ -85,6 +85,19 @@
       transform: translateY(-2px);
     }
 
+    .link-btn.secondary {
+      background-color: transparent;
+      border: 1.5px solid var(--card-bg); /* subtle red outline */
+      color: var(--text-main);
+      box-shadow: none;
+      margin-top: 8px;
+    }
+
+    .link-btn.secondary:hover {
+      background-color: var(--card-bg);   /* fills with red on hover */
+      transform: translateY(-2px);
+    }
+
     .icon {
       width: 20px;
       height: 20px;
@@ -127,7 +140,7 @@
         <span>Twitch</span>
       </a>
 
-      <a class="link-btn" href="mailto:contact.unemploymentdays@gmail.com">✉️ Contact Me</a>
+      <a class="link-btn.secondary" href="mailto:contact.unemploymentdays@gmail.com">✉️ Contact Me</a>
     </div>
   </div>
 
